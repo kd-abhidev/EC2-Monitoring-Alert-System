@@ -59,11 +59,9 @@ Testing
 
 
 
-Generate load on EC2
-
-Alarm state changes to ALARM
-
-Email notification received
+• Generate load on EC2
+• Alarm state changes to ALARM
+• Email notification received
 
 
 
