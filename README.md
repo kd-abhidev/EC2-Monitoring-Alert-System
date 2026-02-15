@@ -1,5 +1,5 @@
-﻿EC2 Monitoring and Alert System
-
+**﻿EC2 Monitoring and Alert System**
+_______________________________
 
 
 Project Overview
@@ -68,4 +68,5 @@ Testing
 Outcome
 
 Implemented automated monitoring and alerting for EC2 to improve system visibility and response time.
+
 
