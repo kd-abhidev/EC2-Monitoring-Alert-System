@@ -1,4 +1,4 @@
-EC2 Monitoring and Alert System
+﻿EC2 Monitoring and Alert System
 
 
 
@@ -38,21 +38,20 @@ Setup Steps
 
 
 
-Launch an EC2 instance
+1. Launch an EC2 instance
+2. Open CloudWatch and select EC2 metrics
+3. Create a CloudWatch alarm for CPU Utilization
+4. Set threshold, for example CPU > 70%
+5. Create an SNS topic
+6. Subscribe your email to the topic
+7. Confirm email subscription
+8. Attach SNS topic to the CloudWatch alarm
 
-Open CloudWatch and select EC2 metrics
 
-Create a CloudWatch alarm for CPU Utilization
 
-Set threshold, for example CPU > 70%
 
-Create an SNS topic
 
-Subscribe your email to the topic
 
-Confirm email subscription
-
-Attach SNS topic to the CloudWatch alarm
 
 
 
