@@ -1,72 +1,143 @@
-**﻿EC2 Monitoring and Alert System**
-_______________________________
+# EC2 Monitoring and Alert System | AWS CloudWatch, SNS
 
+![AWS](https://img.shields.io/badge/AWS-Cloud-orange)
+![EC2](https://img.shields.io/badge/Amazon-EC2-blue)
+![Monitoring](https://img.shields.io/badge/Monitoring-CloudWatch-yellow)
+![Alerts](https://img.shields.io/badge/Alerts-SNS-success)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 
-Project Overview
+---
 
-This project monitors an AWS EC2 instance using Amazon CloudWatch and sends email alerts when resource usage exceeds defined thresholds.
+## Project Overview
 
+Designed and implemented an AWS based monitoring system for EC2 instances.
 
+The system tracks CPU usage using CloudWatch and sends real time alerts through SNS when usage crosses defined thresholds.
 
-Architecture
+Focused on proactive monitoring and quick response.
+
+---
+
+## Key Impact
+
+* Enabled real time EC2 monitoring
+* Automated alerts using CloudWatch and SNS
+* Reduced manual monitoring effort
+* Improved response time to high usage
+* Built scalable alert system
+
+---
+
+## Architecture
+
+![Architecture](Architecture.png)
+
+Flow
 
 EC2 → CloudWatch Metrics → CloudWatch Alarm → SNS → Email Notification
 
+---
 
-
-Services Used
+## AWS Services Used
 
 * Amazon EC2
 * Amazon CloudWatch
 * Amazon SNS
 
+---
 
+## Features
 
-What This Project Does
+* Monitor CPU utilization
+* Threshold based alerts
+* Instant email notifications
+* Automated monitoring setup
+* Scalable design
 
+---
 
+## Workflow
 
-->Monitors EC2 CPU utilization
+1. EC2 sends metrics to CloudWatch
+2. CloudWatch tracks CPU usage
+3. Alarm triggers when threshold exceeded
+4. SNS sends email alert
 
-->Creates CloudWatch alarms based on threshold values
+---
 
-->Sends real time email alerts using SNS when threshold is exceeded
+## Project Structure
 
+```id="q2f6lk"
+.
+├── Screenshots/
+├── Architecture.png
+├── Setup & steps.md
+├── README.md
+└── LICENSE
+```
 
+---
 
-Setup Steps
+## Setup Instructions
 
+Detailed steps available in
 
+Setup & steps.md
 
-1. Launch an EC2 instance
-2. Open CloudWatch and select EC2 metrics
-3. Create a CloudWatch alarm for CPU Utilization
-4. Set threshold, for example CPU > 70%
-5. Create an SNS topic
-6. Subscribe your email to the topic
-7. Confirm email subscription
-8. Attach SNS topic to the CloudWatch alarm
+Quick steps
 
+* Launch EC2 instance
+* Configure CloudWatch metrics
+* Create alarm with threshold
+* Create SNS topic
+* Subscribe email and confirm
+* Attach SNS to alarm
 
+---
 
-
-
-
-
-
-
-Testing
-
-
+## Testing
 
 * Generate load on EC2
-* Alarm state changes to ALARM
-* Email notification received
+* Alarm moves to ALARM state
+* Email alert received
 
+---
 
+## Screenshots
 
-Outcome
+Refer to Screenshots folder for setup and alerts
 
-Implemented automated monitoring and alerting for EC2 to improve system visibility and response time.
+---
+
+## What You Learn
+
+* CloudWatch monitoring
+* SNS alerting
+* AWS system observability
+* Event based alert system
+
+---
+
+## Challenges Solved
+
+* Configured alarm thresholds
+* Connected SNS with CloudWatch
+* Verified alert delivery
+* Tested under load
+
+---
+
+## Future Improvements
+
+* Add memory and disk alerts
+* Integrate Slack notifications
+* Add dashboard for metrics
+* Enable auto scaling triggers
+
+---
+
+## Outcome
+
+Built an automated monitoring system where EC2 metrics trigger alerts through SNS, improving visibility and response time.
 
 
